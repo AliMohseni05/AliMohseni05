@@ -526,6 +526,8 @@ library(corrplot)
 
 setwd("G://R CLASS practice/box/data-WS015.txt")
 mydata <- read.table("G://R CLASS practice/box/data-WS015.txt" , header = TRUE)
+
+
 M = cor(mydata)
 p.mat <- cor_pmat(mydata)
 head(p.mat[, 1:4])
