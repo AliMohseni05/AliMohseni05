@@ -18,7 +18,6 @@ var(x)
 cor(x,y)
 median(x)
 median(y)
-#make plote and show dote
 plot(1:10, type="1", col="blue")
 plot(1:10, type="5", col="blue")
 
@@ -46,11 +45,11 @@ abline(model, col = "red")
 
 #make data set
 my_dataset<- data.frame(hx<-c(1,2,3,4,5,6,7,8,9,10),vy<-c(1,2,3,4,5,6,7,8,9,10))
-#fit model fro a liner reg and print the summery
+#fit model from a liner reg and print the summary
 reglin <- lm(hx ~ vy, data = my_dataset)
 summary(reglin)
 
-#show plote
+#show plate
 plot(my_dataset$vy, my_dataset$hx, main = "titel", xlab = "v", ylab = "h")
 #show line
 abline(reglin, col = "blue", type="l", lwd=2, lty=1)
@@ -67,12 +66,13 @@ cat(rawdata)
 cat(rna)
 v1<-c(1,2,3,5,NA)
 v2<-c(12,42,42,54,44,44,3,3,3,4)
-v3<-v1-v2
+v3<-v1 + v2 # add to vector together in like numpuy in python
+
 v4<-v2-v1
 cat(v3)
 cat(v4)
-v1[v2]  #show v1 acording list v2 
-v1[-v2] #show v1 acording some thing that exsise in v2 
+v1[v2]  #show v1 according list v2 
+v1[-v2] #show v1 according some thing that excise in v2 
 v2[v1]  # this one give error
 ?c()
 x<-10.5
@@ -129,7 +129,7 @@ for(x in 1:10){print(x)}
 for(x in 1:10){print(2*x-1)}
 
 install.packages("rmp") 
-library(rmp) #class pacget 
+library(rmp) #class packet 
 #na
 ###################################
 #make matrix
@@ -222,9 +222,14 @@ install.packages("reshape2")
 library(ggplot2)
 library(reshape2)
 df.t<-melt(df,id.vars ="id",variable.name = "varlable",value.name = "valuus")
+
 ggplot(df.t,aes(x=varlable,y=valuus,fill=varlable))+geom_boxplot(color= "black",notch = T)+
   scale_fill_manual(values = c("green","blue","orange","red"))+
   labs(title="my box",x="x data",y="y data")
+
+
+
+
 
 #----------
 # tamrin  #
@@ -248,6 +253,20 @@ if(nomre>15){
   print("A")
 }
 nomre
+#---------
+melted.mind<-melt(mind,id=c("ID","BTW"), 
+                  variable.name = "WTN", 
+                  value.name = "Results")
+
+head(melted.mind)   
+
+##   ID BTW  WTN  Results
+## 1  1   1 WTN1 6.939619
+## 2  2   2 WTN1 5.978156
+## 3  3   1 WTN1 4.515321
+## 4  4   2 WTN1 3.502277
+## 5  5   1 WTN1 4.972581
+## 6  6   2 WTN1 3.275813
 ```
 # aov 
 ```
@@ -546,7 +565,8 @@ ggcorrplot(corr, hc.order = TRUE,
 ```
 
 # blup
-```library(lme4)
+```
+library(lme4)
 library(dplyr)
 #----------------------#
 #       call data      #
