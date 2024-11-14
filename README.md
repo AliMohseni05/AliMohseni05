@@ -1,7 +1,6 @@
 - 👋 Hi, I’m @AliMohseni05
 - 👀 I’m interested in python 
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
+- 🌱 I’m currently learning bioinformatics
 - 📫 How to reach me find me by alimoseni42@gmail.com 
 
 <!---
