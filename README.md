@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @AliMohseni05
 - 👀 I’m interested in python 
 - 🌱 I’m currently learning bioinformatics
-- 📫 How to reach me find me by alimoseni42@gmail.com 
+- 📫 How to reach me find me at alimoseni42@gmail.com 
 
 <!---
 AliMohseni05/AliMohseni05 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
